@@ -23,9 +23,31 @@ st.markdown("""
     }
     .hero h1 { color: white; margin: 0 0 .35rem 0; }
     .hero p { color: #e5f3fa; margin: 0; }
-    div[data-testid="stMetric"] {
-        background: white; border: 1px solid #e3eaf2;
-        padding: 1rem; border-radius: 14px;
+   
+div[data-testid="stMetric"] {
+    background: linear-gradient(145deg, #172554, #111827);
+    border: 1px solid #334155;
+    border-top: 4px solid #38bdf8;
+    padding: 1rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+/* Warna label metrik */
+div[data-testid="stMetric"] label {
+    color: #cbd5e1 !important;
+}
+
+/* Warna angka hasil pengukuran */
+div[data-testid="stMetricValue"] {
+    color: #f8fafc !important;
+}
+
+/* Warna keterangan tambahan */
+div[data-testid="stMetricDelta"] {
+    color: #67e8f9 !important;
+}
+
     }
     .note {
         background: #eaf4fb; border-left: 4px solid #168aad;
